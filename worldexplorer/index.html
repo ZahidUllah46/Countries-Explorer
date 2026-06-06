@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Explorer — Countries App</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">🌍</span>
+        <span class="logo-text">World <em>Explorer</em></span>
+      </div>
+      <p class="header-sub">Discover nations of the world</p>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="main-wrap">
+
+    <!-- Search Bar -->
+    <div class="search-wrap">
+      <div class="search-box">
+        <span class="search-icon">&#9906;</span>
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="Search countries by name..."
+          autocomplete="off"
+          aria-label="Search countries"
+        />
+        <button class="clear-btn" id="clearBtn" aria-label="Clear search">&#10005;</button>
+      </div>
+      <p class="result-count" id="resultCount"></p>
+    </div>
+
+    <!-- SPINNER -->
+    <div class="spinner-wrap" id="spinnerWrap" aria-live="polite">
+      <div class="spinner"></div>
+      <p class="spinner-text">Fetching countries…</p>
+    </div>
+
+    <!-- ERROR -->
+    <div class="error-wrap" id="errorWrap" hidden>
+      <div class="error-card">
+        <span class="error-icon">⚠️</span>
+        <h2 class="error-title">Oops! Something went wrong</h2>
+        <p class="error-msg" id="errorMsg">We could not load country data. Please check your internet connection and try again.</p>
+        <button class="retry-btn" id="retryBtn">Try Again</button>
+      </div>
+    </div>
+
+    <!-- NO RESULTS -->
+    <div class="no-results" id="noResults" hidden>
+      <span class="no-results-icon">🔍</span>
+      <p>No countries found for <strong id="searchedTerm"></strong></p>
+    </div>
+
+    <!-- COUNTRIES GRID -->
+    <div class="countries-grid" id="countriesGrid" hidden></div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>Data from <a href="https://restcountries.com" target="_blank" rel="noopener">REST Countries API</a> &nbsp;·&nbsp; Qwetrum Technologies Internship 2026</p>
+  </footer>
+
+<script src="app.js"></script>
+</body>
+</html>
