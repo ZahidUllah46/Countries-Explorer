@@ -86,6 +86,6 @@ Qwetrum Technologies
 
 ---
 
-## 🌟 Project Purpose
+##  Project Purpose
 
 The purpose of this project is to practice frontend development concepts, API integration, JavaScript logic, and responsive UI design.
