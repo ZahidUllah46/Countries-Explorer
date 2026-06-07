@@ -15,10 +15,12 @@ const API_URL = 'https://restcountries.com/v3.1/all?fields=name,flags,population
 
 const COUNTRY_LIMIT = 10;
 
+
 let allCountries = []; // stores the 10 fetched countries
 
 function formatPopulation(num) {
   if (num >= 1_000_000_000) return (num / 1_000_000_000).toFixed(1) + 'B';
+
   if (num >= 1_000_000)     return (num / 1_000_000).toFixed(1) + 'M';
   if (num >= 1_000)         return (num / 1_000).toFixed(1) + 'K';
   return num.toLocaleString();
