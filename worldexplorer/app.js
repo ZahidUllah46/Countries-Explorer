@@ -10,11 +10,8 @@ const countriesGrid= document.getElementById('countriesGrid');
 const resultCount  = document.getElementById('resultCount');
 const noResults    = document.getElementById('noResults');
 const searchedTerm = document.getElementById('searchedTerm');
-
 const API_URL = 'https://restcountries.com/v3.1/all?fields=name,flags,population,region,capital,cca2';
-
 const COUNTRY_LIMIT = 10;
-
 
 let allCountries = []; // stores the 10 fetched countries
 
