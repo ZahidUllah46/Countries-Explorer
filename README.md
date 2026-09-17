@@ -19,7 +19,6 @@ This project uses the **REST Countries API** to fetch live country data and disp
 ✅ Responsive design for mobile, tablet, and desktop  
 ✅ Clean UI using CSS Grid and Flexbox  
 
----
 
 ##  Technologies Used
 
@@ -28,7 +27,7 @@ This project uses the **REST Countries API** to fetch live country data and disp
 - JavaScript (ES6+)
 - REST Countries API
 
----
+
 
 ##  What I Learned
 
@@ -42,7 +41,6 @@ During this project I learned:
 - Creating dynamic UI elements
 - Responsive web design without frameworks
 
----
 
 ## Project Structure
 
